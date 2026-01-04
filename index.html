@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>3 Months With You 🤍</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 20px;
+}
+h1 { font-size: 2.6rem; }
+h2 { margin-bottom: 8px; }
+p  { font-size: 1.1rem; line-height: 1.7; }
+.card {
+  background: rgba(255,255,255,0.12);
+  padding: 28px;
+  border-radius: 18px;
+  margin-top: 30px;
+}
+button {
+  background: white;
+  color: #1e3c72;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 18px;
+}
+button:hover { background: #eaeaea; }
+.hidden { display: none; }
+
+/* Game CSS */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+.game-card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  font-size: 2rem;
+  padding: 25px 0;
+  cursor: pointer;
+  user-select: none;
+}
+.game-card.matched { background: rgba(255,255,255,0.35); cursor: default; }
+
+footer { margin-top: 50px; font-size: 0.9rem; opacity: 0.85; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>3 Months With You 🤍</h1>
+<p>𝑨 𝒍𝒊𝒕𝒕𝒍𝒆 𝒋𝒐𝒖𝒓𝒏𝒆𝒚! 🌸🚶‍♀️ 𝑰𝑺 𝑻𝑯𝑼𝑹𝒀 𝑺𝑨𝑭𝑨𝑹 𝑴𝑬𝑰𝑵 𝑯𝑴𝑹𝑰 𝑲𝑰𝑻𝑵𝑰 𝒀𝑨𝑫𝑬𝑬𝑵 𝑱𝑼𝑹𝑰 𝑯𝑨𝑵? 💭💖 𝑻𝑯𝑼𝑹𝑨 𝑹𝑬𝑽𝑰𝑵𝑬 𝑯𝑶 𝑱𝑨𝒀!? 🌟✨</p>
+
+<!-- SECTION 1 -->
+<div class="card">
+  <h2>Section 1: A Small Beginning</h2>
+  <p>𝒀𝑨𝑫 𝑯 𝑨𝑷𝑲𝑶! 🐒 𝑴𝑬𝑰𝑵 𝑩𝑵𝑫𝑹 𝑲𝑯𝑻𝑰 𝑻𝑯𝑰, 𝑨𝑩 𝒀𝑬 𝑯𝑬 𝑴𝑱𝑬𝒀 𝑷𝑺𝑵𝑫 𝑨𝑮𝑨𝒀 𝑯 💀😂. 𝑨𝑰 𝑺𝒀 𝑰𝑴𝑮 𝑮𝑬𝑵𝑬𝑹𝑨𝑻𝑬 🖼️, 𝑭𝑶𝑳𝑳𝑶𝑾 𝑲𝑹 𝑲 𝑮𝐂 𝑨𝑫𝑫 𝑯𝑶𝑵𝑨 👥💬, 𝑯𝑴𝑹𝑰 𝑵𝑶𝑲 𝑱𝐻𝑶𝑲 ⚡, 𝑨𝑷𝑲𝑨 𝑺𝐸𝑪𝑹𝐸𝑻𝑺 𝑩𝑨𝑻𝑨𝑵𝑨 🤫, 𝑯𝑨𝑯𝑨 😝, 𝑴𝑱𝑬𝑰𝑵 𝑪𝐻𝐈𝑲𝐼𝑵𝐼 🫦, 𝑶𝑹 𝑷𝑭𝑹 𝑷𝑼𝑹𝑷𝑶𝑺𝐸… 🎯✨</p>
+  <button onclick="showNext('s2')">Next</button>
+</div>
+
+<!-- SECTION 2 -->
+<div id="s2" class="card hidden">
+  <h2>Section 2: The Time Between Us</h2>
+  <p>𝑰𝑺 𝑾𝑨𝑸𝑻 𝑴𝑬𝑰𝑵 𝑯𝑼𝑴𝑵𝒀 𝑩𝑯𝑻 𝑴𝑨𝒁𝑨 𝑲𝑰𝑨 😍✨, 𝑱𝑶 𝑺𝑶𝑪𝐻 𝑹𝑯𝑬𝑰𝑵 𝑾𝑶 𝑩𝑯𝑰 𝑷𝐺𝐿 🤪💭, 𝑨𝑷𝑲𝑶 𝑷𝑻𝑨 𝑯 𝑨𝑷 𝑴𝑬𝑰𝑵 𝑱𝑨𝑾𝑵 💋, 𝑨𝑷𝑵𝒀 𝑴𝑬𝑰𝑵 𝑯𝑶𝑷𝐸 𝑫𝑰 𝑯 𝑲 𝑻𝑼𝑴 𝑲𝑬𝑺𝒀 𝑲𝐼𝑺𝐼 𝑩𝐻𝐼 𝑷𝑨𝑺𝐼𝑵𝑫𝐼𝑫𝐴 𝑨𝑼𝑹𝐴𝑻 𝑵𝐼 𝐵𝑨𝑁 𝑺𝑲𝐻𝑻𝐼 🤩💖, 𝐻𝑅 𝑇𝐼𝑀𝐸 𝑺𝑷𝐸𝐶𝐼𝐴𝐿 𝑭𝐸𝐸𝐿 𝑲𝑹𝑾𝐴𝒀𝐴, 𝐹𝐼𝑹𝑆𝑇 𝑷𝐼𝑹𝐼𝑶𝑹𝐼𝑇𝑌 𝑺𝑴𝑱𝐻𝑨 𝑴𝑬𝑰𝑵 💌, 𝐼 𝐿𝑂𝑉𝐸 𝑈𝐻 ❤️, 𝐴𝑮𝐿𝐴 𝑇𝐼𝑀𝐸 𝐵𝑯𝐼 𝐴𝑃𝐾𝑌 𝑺𝑨𝑻𝐻 𝑮𝑼𝒁𝑹𝑵𝐴 𝑯 𝑴𝑱𝑬𝑰𝑵 𝐼𝑁𝑺𝐻𝐴𝐿𝐿𝐴𝐻… 🌟💫</p>
+  <button onclick="showNext('game1')">Play Game 1 🎯</button>
+</div>
+
+<!-- GAME 1: MEMORY MATCH (3 Rounds, different emojis) -->
+<div id="game1" class="card hidden">
+  <h2>Memory Match Game</h2>
+  <p>𝑴𝒂𝒕𝒄𝒉 𝒕𝒉𝒆 𝑯𝒆𝒂𝒓𝒕𝒔! ❤️💞</p>
+  <div id="gameGrid1" class="game-grid"></div>
+  <p id="gameMsg1" class="hidden"></p>
+  <button id="gameBtn1" class="hidden" onclick="showNext('s3')">Next Section</button>
+</div>
+
+<!-- SECTION 3 -->
+<div id="s3" class="card hidden">
+  <h2>Section 3: Little Moments</h2>
+  <p>𝑴𝑶𝑴𝐸𝑵𝑻𝑺 𝑻𝑶 𝑨𝑷𝐾𝒀 𝑺𝑨𝑻𝐻 𝐻𝑹 𝑾𝐴𝑄𝑻 𝐻𝑶𝑻𝑌 𝑴𝐸𝑹𝐼 𝐽𝑨𝑾𝑵 💖✨, 𝐵𝐸𝑆𝑇 𝑊𝑂 𝐻𝑂𝑇𝐴 𝐽𝐵 𝑴𝐸𝐼𝑁 𝑨𝑷𝐾𝑂 𝑨𝑷𝑵𝐼 𝑹𝑷𝐵𝐿𝑀 𝐵𝐴𝑇𝐴𝑻𝐼 🤗💌 𝑂𝑅 𝑨𝑷 𝑴𝑱𝒀 𝑷𝒀𝑹 𝑩𝑯𝑰 𝐾𝑹𝑻𝑌 ❤️, 𝑶𝑹 𝑴𝐸𝑹𝐼 𝐻𝑹 𝐵𝑇 𝑺𝑼𝑵𝑻𝑌 👂💭, 𝑺𝑼𝑵𝑻𝑌 𝐻𝐸 𝑵𝐼 𝐻 𝑨𝑷𝐾𝑂 𝒀𝐴𝐷 𝐵𝑯𝑰 𝑹𝐻𝑻𝐼 💡, 𝒀𝐀𝐃 𝐻 𝑻𝐼𝑴𝐸 𝑻𝐀𝐁𝐿𝐸 𝐻𝐸𝐻𝐸 ⏰😅 𝑱𝑶 𝑴𝐸𝑵𝐘 𝐴𝐽 𝑻𝐊 𝑭𝑶𝐿𝐿𝑶𝑾 𝑵𝐼 𝐾𝑌𝐴 😜, 𝐻𝐸𝐻𝐸, 𝑴𝑶𝑴𝐸𝑵𝑻⁉️ 🫶, 𝐽𝐵 𝑷𝐼𝐶𝐻𝐿𝐼 𝐵𝐴𝑹 𝑨𝑷𝐍𝒀 𝑾𝐼𝑺𝐻 𝐾𝑌𝐴 𝑻𝑯𝑨 𝑴𝐽𝑬𝑰𝑵 😍💌, 𝐻𝒀𝐸𝐸𝐸𝐸𝐸 𝑴𝑼𝐴𝐻 𝐽𝐴𝑾𝑵 𝐐𝑼𝑹𝐵𝐴𝑵 𝐴𝑷 𝑷𝑹… 😘💖</p>
+  <button onclick="showNext('s4')">Next</button>
+</div>
+
+<!-- SECTION 4 -->
+<div id="s4" class="card hidden">
+  <h2>Section 4: Small Laughs</h2>
+<p>𝐻𝑆𝑁𝐴 𝐾𝐻𝐸𝐼𝐿𝑁𝐴 𝑇𝑂 𝐻𝑈𝑀 𝑀𝐸𝐼𝑁 𝑅𝑂𝑍 𝐻𝑂𝑇𝐴 𝐻 😆✨, 𝑃𝑅 𝐾𝐶 𝑆𝑃𝐸𝐶𝐼𝐴𝐿 𝐵ℎ𝐼 𝑇𝑂 𝐻𝑂𝑇𝐴 𝐻 𝑁𝐴 💖, 𝐴𝑃𝑘𝑂 𝑀𝐸𝐼𝑁 𝐴𝑃𝑁𝐴 𝐵𝑇𝑎𝑜 𝑁𝐴 😘, 𝑄𝑆𝑀 𝑆𝑌 𝐽𝐵 𝐴𝑃 𝑂𝐹𝐹 𝐻𝑂𝑇𝐼 𝐻 𝑇𝑂 𝐴𝑃𝑘𝑖 𝑉𝐼𝐷𝐸𝑂𝑆 𝑃𝑌 𝑆𝐼𝑀𝑃𝐿𝐸 𝐷𝐸𝑘ℎ 𝐾 𝐻𝑎𝑆𝑁𝑌 𝐿𝐺𝑇𝐼 𝐻𝑂𝑂𝑁 😂💻, 𝑲 𝑊𝑎𝑜𝑜 𝐻𝐸’𝑆 𝑀𝐼𝑁𝐸 💘, 𝑂𝑅 𝑆𝐼𝑅𝐹 𝑀𝐸𝑅𝐴 𝑁𝐼 𝑌𝐸 𝑃𝐺𝐿 𝐵ℎ𝐼 𝐻 𝑅𝐸𝑆𝑃𝐸𝐶𝑇 𝐵ℎ𝐼 𝐾𝑅𝑇𝐴 𝐻 🙌, 𝑀𝐸𝑅𝐴 𝐻𝑈𝐾𝑀 𝐵ℎ𝐼 𝑀𝐴𝑁𝑇𝐴 𝐻 💕, 𝐿𝑂𝑉𝐸 𝑈𝐻 𝑌𝑊𝑅… 😍💖</p>  <button onclick="showNext('game2')">Play Game 2 🖱️</button>
+</div>
+
+<!-- GAME 2: CLICK COUNTER (1 Round) -->
+<div id="game2" class="card hidden">
+  <h2>Click Challenge</h2>
+  <p>𝐻𝑜𝑤 𝑚𝑢𝑐ℎ 𝑡𝑖𝑚𝑒𝑠 𝑈𝐻 𝑟𝑒𝑚𝑒𝑚𝑏𝑒𝑟 𝑀𝐸 𝑖𝑛 10 𝑠𝑒𝑐𝑜𝑛𝑑𝑠⁉️⏱️💖</p>
+  <p>Time: <span id="timer2">10</span>s | Clicks: <span id="clicks2">0</span></p>
+  <button id="clickBtn2">Click Me!</button>
+  <p id="game2Msg" class="hidden"></p>
+  <button id="gameBtn2" class="hidden" onclick="showNext('s5')">Next Section</button>
+</div>
+
+<!-- SECTION 5 -->
+<div id="s5" class="card hidden">
+  <h2>Section 5: Quiet Comfort</h2>
+  <p>𝐴𝑃𝑘𝐼 𝐴𝑊𝑨𝑍, 𝐽𝐵 𝐵ℎ𝐼 𝑆𝑈𝑁𝑇𝐼 𝐻𝑂𝑂𝑁 🎧💖, 𝐵𝐸𝑆ℎ𝐾 𝐾𝐼𝑆𝑆𝐸𝑆 𝐻𝑂 𝑌𝑎 𝐾𝑐ℎ 𝐵ℎ𝐼 😘💌, 𝐴𝑃 𝐽𝑁𝑇𝑌 𝐽𝐵 𝐴𝑃 𝑂𝐹𝐹 𝐻𝑂𝑌 𝑇𝐻𝑌 𝑀𝐵𝐿 𝑇𝑂𝑂𝑇𝐴 𝑇𝐻𝑌 📱💔, 𝑇𝑂 𝑀𝐸𝐼𝑁 𝐴𝑃𝐾𝐼 𝑉𝑀𝑆 𝑆𝑈𝑁𝑇𝐼 𝐻𝑂𝑂𝑁 😌💭, 𝑄𝑆𝑀 𝑆𝑌 𝑇𝐵 𝑊𝑂 𝐻𝐸 𝑈𝑀𝐸𝐸𝐷 𝑇𝐻𝑌 𝑀𝐸𝑅𝑌 🌟💖, 𝐽𝐵 𝑊𝑂 𝐶𝐴𝐿𝐿 𝑃𝑌 𝐵𝑇 𝐾𝐼 😍📞, 𝑄𝑆𝑀 𝑆𝑌 𝑀𝐸𝐼𝑁 𝑈𝑊𝑊 𝐾ℎ𝑢𝑠ℎ𝐼 𝑆𝑌 𝑅𝑂𝑁𝑌 𝐿𝑔 𝐺𝐴𝐼 😭💖…</p>
+  <button onclick="showNext('s6')">Next</button>
+</div>
+
+<!-- SECTION 6 -->
+<div id="s6" class="card hidden">
+  <h2>Section 6: Fun Plans</h2>
+  <p>𝑷𝑳𝑨𝑵𝑺 𝑻𝑶 𝑩𝑯𝑻 𝑯 𝑨𝑷𝐾𝒀 𝑺𝑨𝑻𝐻 💭💖; 𝑨𝑳𝑳𝑨𝑯 𝑲 𝑮𝐻𝑹 𝑱𝑨𝑵𝒀 𝑲𝑨 🕋🤲, 𝑺𝐻𝑨𝑫𝐼 𝑲𝑹𝑵𝒀 𝑲𝑨 💍✨, 𝑲𝐻𝑼𝐒𝐻 𝑹𝐻𝑵𝒀 𝑲𝑨 😊🌸, 𝑳𝐼𝐹𝐸 𝑮𝑼𝒁𝑹𝑵𝒀 𝑲𝑨 🌈💫.
+ 𝑺𝑩 𝑴𝑬𝑰𝑵 𝑺𝐼𝑹𝐹 𝑨𝑷𝐾𝑨 𝑺𝑨𝑻𝐻 𝑪𝐻𝑨𝐻𝐸𝐸𝐘𝐸 💞.
+ 𝑲𝑶𝐼 𝐵𝐻𝐼 𝑭𝐴𝐼𝐒𝐿𝐴 𝑲𝑹𝑶𝐍, 𝑨𝑷𝐾𝐼 𝑫𝐴𝐍𝑻 😅 𝑻𝑶 𝑪𝐻𝐿𝑶 𝑻𝐻𝐾 𝐻, 𝑺𝑴𝐽𝐻𝐴𝑻𝐘 𝐻 😌,
+ 𝑷𝑹 𝑶𝑾𝐴𝐴 🤨 𝑱𝐼𝐷𝐻𝐑 𝑮𝐑𝐵𝐑 𝑲𝑹 𝑫𝐼 𝐻 𝑴𝑬𝑵𝐘, 𝑼𝐷𝐻𝐑 𝑴𝑬𝑹𝐼 𝑺𝐼𝐷𝐸 𝑳𝐸𝑵𝐼 𝐻 𝑨𝑷𝐾𝑶 🛡️💖, 𝑩𝑺𝐻 𝐻𝐔𝐻 𝑷𝑶𝑷 😤😂</p>
+  <button onclick="showNext('game3')">Play Game 3 🎯</button>
+</div>
+
+<!-- GAME 3: EMOJI GUESS (3 Rounds) -->
+<div id="game3" class="card hidden">
+  <h2>Emoji Guess Game</h2>
+  <p>𝑹𝒆𝒎𝒆𝒎𝒃𝒆𝒓 𝑻𝒉𝒆 𝑬𝒎𝒐𝒋𝒊 𝒂𝒏𝒅 𝑮𝒖𝒆𝒔𝒔! 🎉🤔</p>
+  <p id="emojiFlash" style="font-size:3rem;">❔</p>
+  <div id="options3"></div>
+  <p id="game3Msg" class="hidden"></p>
+  <button id="gameBtn3" class="hidden" onclick="showNext('s7')">Next Section</button>
+</div>
+
+<!-- SECTION 7 -->
+<div id="s7" class="card hidden">
+  <h2>Section 7: Random Fun</h2>
+  <p>𝐻𝐴𝑀𝐴𝑅𝐴 𝐹𝑈𝑁 𝑇𝑂 𝐼𝑇𝑁𝐴 𝑁𝐼 𝐻𝑂𝑇𝐴 😅, 𝑃𝑅 𝐴𝑃 𝑀𝐽𝑌 𝐾𝑂𝐼 𝑁𝐴 𝐾𝑂𝐼 𝑁𝐸𝑊 𝑪ℎ𝒁 𝐵𝑇𝐴𝑇𝑌 𝑅𝐻𝑇𝐸 𝐻𝑂 💡✨,
+ 𝐴𝑃 𝑁𝐼 𝑀𝐸𝐼𝑁 𝐻𝐸 𝑆𝐻𝑈𝑅𝑂 𝑅𝐻𝐷𝑇𝐼 𝐽𝑁𝐻 𝑌𝐸 𝐻𝑂𝑊𝐴 𝑊𝑂 𝐻𝑂𝑊𝐴 🤭💬,
+ 𝑂𝑅 𝐴𝑃𝐾𝑂 𝑌𝐴𝐷 𝐻 𝑇𝑂 1 𝐵𝐴𝑅 𝑀𝐸𝑁𝑌 𝑊𝑃 𝑃𝑌 𝑃𝑂𝐿𝐿 𝐵𝐴𝑁𝐴𝑌𝐴 𝐻 𝑲 𝐽𝐴𝑂𝑔𝑌 𝑀𝐸𝑅𝐸 𝑆𝐴𝑇𝐻 𝐷𝐼𝑁𝐸𝑅 🍽️💖,
+ 𝑂𝑅 𝐵ℎ𝐼 𝐵𝐻𝑇 𝑆𝑨𝑊𝑨𝐿 𝑅𝐾𝑇𝐼 𝐻𝑂𝑁 𝐴𝑃𝑆𝑌 😜💌, 𝑀𝐸𝐼𝑁 𝑃𝐺𝐿… 😂💖</p>
+  <button onclick="showNext('s8')">Next</button>
+</div>
+
+<!-- SECTION 8 -->
+<div id="s8" class="card hidden">
+  <h2>Section 8: What I want most?</h2>
+  <p>𝐴𝑃𝐾𝐴 𝑆𝐴𝑇𝐻 𝐶𝐻𝐴𝐻𝐸𝑌𝐸 𝐵𝑆, 𝐻𝑅 𝐽𝐺𝐻, 𝐻𝑅 𝑀𝑂𝑅 🌸💞, 𝑆𝐼𝑅𝐹 𝐴𝐵 𝐴𝑃 𝐶𝐻𝐴𝐻𝐸𝑌𝐸 𝐻𝑂 𝑀𝐽𝑌 💖✨,
+ 𝐴𝑃 𝑃𝑌 𝑇𝑅𝑈𝑆𝑇 𝐵ℎ𝑇 𝐻𝑂 𝐺𝑌𝐴  𝐻🙌💌,
+ 𝑂𝑅 𝐴𝐵 𝑇𝑂 𝑨𝐿𝐿𝐴𝐻 𝑃𝑌 𝐵ℎ𝑇 𝒴𝐴𝑄𝐸𝐸𝑁 𝐻𝑂 𝐺𝑌𝐴 𝐾 𝐷𝑈𝐴 𝐷𝑂𝑁𝑂 𝑇𝑅𝐹 𝐻 𝑇𝑂 𝐻𝑈𝑀 𝐼𝑁𝑆𝐻𝐴𝐿𝐿𝐴𝐻 ✨🌟, 1 𝐵ℎ𝐼 𝑍𝑅𝑅 𝐻𝑂𝑁𝐺𝑌 💞🙏…</p>
+  <button onclick="showNext('game4')">Play Game 4 🌈</button>
+</div>
+
+<!-- GAME 4: COLOR TAP (3 Rounds) -->
+<div id="game4" class="card hidden">
+  <h2>Color Tap Game</h2>
+  <p>𝑻𝒂𝒑 𝑻𝒉𝒆 𝑪𝒐𝒓𝒓𝒆𝒄𝒕 𝑪𝒐𝒍𝒐𝒓 𝑬𝒎𝒐𝒋𝒊 🎨⚡ 𝑨𝒔 𝑭𝒂𝒔𝒕 𝑨𝒔 𝒀𝒐𝒖 𝑪𝒂𝒏! 🏃‍♀️💨💖</p>
+  <div id="colorOptions"></div>
+  <p id="game4Msg" class="hidden"></p>
+  <p id="game4FinalMsg" class="hidden">
+    𝐴𝑃𝐾𝐴 𝐴𝑁𝑆𝑊𝐸𝑅 𝑇𝐻𝑘 𝐻 𝑌𝐴 𝐺𝐿𝑇 𝑀𝐴𝑇𝑇𝐸𝑅 𝑁𝐼 𝐾𝑅𝑇𝐴 😌✨, 
+    𝑆𝐼𝑅𝐹 𝐴𝑃 𝑀𝐴𝑇𝑇𝐸𝑅 𝐾𝑅𝑇𝐸 𝐻 💖🌸
+  </p>
+  <button id="gameBtn4" class="hidden" onclick="showNext('s9')">Next Section</button>
+</div>
+
+
+<!-- SECTION 9 -->
+<div id="s9" class="card hidden">
+  <h2>Section 9: Sweet Memories</h2>
+  <p>𝐻𝑅 𝑊𝑂 𝑊𝐴𝑄𝑇 𝐽𝑂 𝐴𝑃𝐾𝑌 𝑆𝐴𝑇𝐻 𝐺𝑈𝑍𝑅𝐴 𝐻 😌💖,
+ 𝐻𝑈𝑀 𝑀𝐸𝐼𝑁 𝐿𝐴𝑅𝐴𝑌𝐴 𝐵ℎ𝐼 𝐻𝑂𝐼 😅💬,
+ 𝑃𝑅 𝐴𝑃𝐾𝐼 𝑇𝑅𝐻𝐴 𝑊𝑂 𝐾𝑂𝑁𝑆𝐴 𝐿𝐴𝑅𝐴𝐼 𝐻𝑂𝑇𝐼… 𝑃𝐼𝑌𝐴𝑅 𝐻𝑂𝑇𝐴 𝐻 😘💞 𝐻𝐸𝐻𝐸…</p>
+  <button onclick="showNext('game5')">Play Game 5 ✨</button>
+</div>
+
+<!-- GAME 5: QUICK FLASH (3 Rounds) -->
+<div id="game5" class="card hidden">
+  <h2>Quick Flash Game</h2>
+  <p>𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐞 𝐅𝐥𝐚𝐬𝐡𝐢𝐧𝐠 𝐒𝐭𝐚𝐫 ⭐✨ 𝐁𝐞𝐟𝐨𝐫𝐞 𝐢𝐭 𝐃𝐢𝐬𝐚𝐩𝐩𝐞𝐚𝐫𝐬! ⏳💨💖</p>
+  <button id="flashBtn">Start!</button>
+  <p id="game5Msg" class="hidden"></p>
+  <button id="gameBtn5" class="hidden" onclick="showNext('surprise')">Open Surprise 🎁</button>
+</div>
+
+<!-- SURPRISE -->
+<div id="surprise" class="card hidden">
+  <h2>Final Surprise 🎁</h2>
+  <p>𝐇𝐞𝐫𝐞 𝐚𝐫𝐞 𝐬𝐨𝐦𝐞 𝐯𝐢𝐝𝐞𝐨𝐬 𝐈 𝐰𝐚𝐧𝐭 𝐲𝐨𝐮 𝐭𝐨 𝐬𝐞𝐞 💙🎥✨</p>
+  
+ <a href="https://drive.google.com/file/d/1eQGcuPl9LS91NosathSKAKkeuDrEz0ls/view?usp=drive_link" target="_blank">
+  <button>▶️ Watch Surprise Video 🎁</button>
+ </a>
+  
+ <a href="https://drive.google.com/file/d/1lBfnwWq4UQlAnCKoJNeB_LYZgK-vnfFo/view?usp=drive_link" target="_blank">
+  <button>▶️ Watch Surprise Video 🎁</button>
+ </a>
+  
+  <p>
+      𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒃𝒆𝒊𝒏𝒈 𝒑𝒂𝒓𝒕 𝒐𝒇 𝒎𝒚 𝒍𝒊𝒇𝒆 🤍✨
+ 𝑻𝒉𝒆𝒔𝒆 3 𝒎𝒐𝒏𝒕𝒉𝒔 𝒘𝒆𝒓𝒆 𝒔𝒊𝒎𝒑𝒍𝒆, 𝒓𝒆𝒂𝒍, 𝒂𝒏𝒅 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 🌸⏳
+ 𝑰’𝒎 𝒈𝒓𝒂𝒕𝒆𝒇𝒖𝒍 𝒇𝒐𝒓 𝒚𝒐𝒖 🤍💫
+    </p>
+</div>
+
+<footer>  𝑴𝑨𝑫𝑬 𝑾𝑰𝑻𝑯 𝑳𝑶𝑽𝑬 ✨💖 𝑨𝑵𝑫 𝑱𝑼𝑺𝑻 𝑭𝑶𝑹 𝑼𝐻 𝑴𝑶𝐼 𝑳𝑶𝑽𝑬 🌸💞</footer>
+</div>
+
+<script>
+function showNext(id){ 
+  const el = document.getElementById(id);
+  el.classList.remove("hidden"); 
+  window.scrollTo(0,document.body.scrollHeight); 
+  if(id==="game1") startGame1();
+  if(id==="game2") startGame2();
+  if(id==="game3") startGame3();
+  if(id==="game4") startGame4();
+  if(id==="game5") startGame5();
+}
+
+/* GAME 1: MEMORY MATCH (3 Rounds, different emojis) */
+let rounds1 = 0, first1=null, lock1=false, matched1=0;
+const emojiSets = [
+  ["🤍","🤍","✨","✨","🌙","🌙"],
+  ["❤️","❤️","💛","💛","💜","💜"],
+  ["🌟","🌟","🪐","🪐","🌈","🌈"]
+];
+function startGame1(){ rounds1=0; nextRound1(); }
+function nextRound1(){
+  rounds1++;
+  if(rounds1>3){
+    document.getElementById("gameMsg1").innerText="All Rounds Completed! 🎉";
+    document.getElementById("gameMsg1").classList.remove("hidden");
+    document.getElementById("gameBtn1").classList.remove("hidden");
+    return;
+  }
+  matched1=0; first1=null; lock1=false;
+  const grid=document.getElementById("gameGrid1"); grid.innerHTML="";
+  let emojis1 = [...emojiSets[rounds1-1]].sort(()=>0.5-Math.random());
+  emojis1.forEach(e=>{
+    const card=document.createElement("div");
+    card.className="game-card"; card.innerText="❔"; card.dataset.e=e;
+    card.onclick=()=>{
+      if(lock1||card.classList.contains("matched")) return;
+      card.innerText=e;
+      if(!first1){ first1=card; } else{
+        lock1=true;
+        if(first1.dataset.e===e){ first1.classList.add("matched"); card.classList.add("matched"); matched1+=2; reset1();
+          if(matched1===emojis1.length){ setTimeout(nextRound1,700);}
+        } else { setTimeout(()=>{first1.innerText="❔"; card.innerText="❔"; reset1();},700);}
+      }
+    };
+    grid.appendChild(card);
+  });
+}
+function reset1(){ first1=null; lock1=false; }
+
+/* GAME 2: CLICK COUNTER (1 Round) */
+let clicks2=0, time2=10, interval2;
+function startGame2(){
+  clicks2=0; time2=10;
+  document.getElementById("clicks2").innerText=clicks2;
+  document.getElementById("timer2").innerText=time2;
+  document.getElementById("clickBtn2").disabled=false;
+  document.getElementById("game2Msg").classList.add("hidden");
+  document.getElementById("gameBtn2").classList.add("hidden");
+
+  interval2=setInterval(()=>{
+    time2--; document.getElementById("timer2").innerText=time2;
+    if(time2<=0){
+      clearInterval(interval2);
+      document.getElementById("clickBtn2").disabled=true;
+      document.getElementById("game2Msg").innerText="Your clicks: "+clicks2;
+      document.getElementById("game2Msg").classList.remove("hidden");
+      document.getElementById("gameBtn2").classList.remove("hidden");
+    }
+  },1000);
+
+  document.getElementById("clickBtn2").onclick=()=>{
+    clicks2++;
+    document.getElementById("clicks2").innerText=clicks2;
+  };
+}
+
+/* GAME 3: EMOJI GUESS (3 Rounds) */
+let emojisPool = ["🤍","✨","🌙","💛","💜","❤️","🌟"], rounds3=0, score3=0;
+function startGame3(){ rounds3=0; score3=0; nextRound3(); }
+function nextRound3(){
+  rounds3++;
+  if(rounds3>3){ 
+    document.getElementById("game3Msg").innerText="Game Over! Your Score: "+score3;
+    document.getElementById("game3Msg").classList.remove("hidden");
+    document.getElementById("gameBtn3").classList.remove("hidden");
+    document.getElementById("options3").innerHTML="";
+    return;
+  }
+  let optionsDiv=document.getElementById("options3"); optionsDiv.innerHTML="";
+  document.getElementById("game3Msg").classList.add("hidden");
+  document.getElementById("gameBtn3").classList.add("hidden");
+
+  let currentEmojis = emojisPool.sort(()=>0.5-Math.random()).slice(0,3);
+  let correctEmoji = currentEmojis[Math.floor(Math.random()*currentEmojis.length)];
+  document.getElementById("emojiFlash").innerText = correctEmoji;
+
+  setTimeout(()=>{
+    document.getElementById("emojiFlash").innerText="❔";
+    currentEmojis.sort(()=>0.5-Math.random()).forEach(e=>{
+      let btn=document.createElement("button");
+      btn.innerText=e;
+      btn.onclick=()=>{
+        if(e===correctEmoji){ score3++; document.getElementById("game3Msg").innerText="Correct! 🎉"; }
+        else{ document.getElementById("game3Msg").innerText="Oops! Correct was "+correctEmoji; }
+        document.getElementById("game3Msg").classList.remove("hidden");
+        setTimeout(nextRound3,1000);
+      };
+      optionsDiv.appendChild(btn);
+    });
+  },1000);
+}
+
+/* GAME 4: COLOR TAP (3 Rounds) */
+let colors=["💙","💜","💛"], correct4, round4=0;
+
+function startGame4(){ 
+  round4=0; 
+  nextRound4(); 
+}
+
+function nextRound4(){
+  round4++;
+  if(round4>3){ 
+    document.getElementById("game4Msg").innerText="All Rounds Completed! 🎉";
+    document.getElementById("game4Msg").classList.remove("hidden"); 
+    document.getElementById("game4FinalMsg").classList.remove("hidden"); // show final paragraph
+    document.getElementById("gameBtn4").classList.remove("hidden"); 
+    return; 
+  }
+
+  document.getElementById("colorOptions").innerHTML="";
+  document.getElementById("game4Msg").classList.add("hidden");
+  document.getElementById("gameBtn4").classList.add("hidden");
+  document.getElementById("game4FinalMsg").classList.add("hidden"); // hide during rounds
+
+  correct4=colors[Math.floor(Math.random()*colors.length)];
+  colors.sort(()=>0.5-Math.random()).forEach(c=>{
+    const btn=document.createElement("button");
+    btn.innerText=c;
+    btn.onclick=()=>{ 
+      if(c===correct4){ document.getElementById("game4Msg").innerText="Correct! 🎉"; }
+      else{ document.getElementById("game4Msg").innerText="Oops! Correct was "+correct4; }
+      document.getElementById("game4Msg").classList.remove("hidden");
+      setTimeout(nextRound4,1000);
+      document.getElementById("colorOptions").innerHTML="";
+    };
+    document.getElementById("colorOptions").appendChild(btn);
+  });
+}
+
+
+function startGame5(){
+  document.getElementById("game5Msg").classList.add("hidden");
+  document.getElementById("gameBtn5").classList.add("hidden");
+
+  const btn = document.getElementById("flashBtn");
+  btn.innerText = "Flashing soon!";
+
+  setTimeout(()=>{
+    btn.innerText = "⭐ Click Me!";
+    btn.onclick = ()=>{
+      document.getElementById("game5Msg").innerText = "You got it! 🎉";
+      document.getElementById("game5Msg").classList.remove("hidden");
+      document.getElementById("gameBtn5").classList.remove("hidden");
+    };
+  },1000);
+}
+
+</script>
+
+</body>
+</html>
